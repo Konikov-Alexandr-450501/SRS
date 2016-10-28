@@ -268,7 +268,32 @@
 			fill_color 	13434879
 			quidu      	"58051C820200"
 			height     	118)
-		    (object ClassView "Class" "Use Case View::User" @4
+		    (object UseCaseView "Use Case View::View system state" @4
+			location   	(704, 352)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@4
+			    location   	(704, 490)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"View system state")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"58051C610343"
+			height     	118)
+		    (object ClassView "Class" "Use Case View::User" @5
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -284,7 +309,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@4
+			    Parent_View 	@5
 			    location   	(1152, 816)
 			    anchor_loc 	1
 			    nlines     	2
@@ -297,7 +322,7 @@
 			quidu      	"58051C38034A"
 			annotation 	8
 			autoResize 	TRUE)
-		    (object AssociationViewNew "$UNNAMED$0" @5
+		    (object AssociationViewNew "$UNNAMED$0" @6
 			location   	(1278, 563)
 			font       	(object Font
 			    size       	10
@@ -313,31 +338,31 @@
 			line_color 	3342489
 			quidu      	"58051DBF01A9"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$1" @6
-				Parent_View 	@5
+			    (object RoleView "$UNNAMED$1" @7
+				Parent_View 	@6
 				location   	(126, -93)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"58051DC6009F"
-				client     	@5
+				client     	@6
 				supplier   	@1
 				vertices   	(list Points
 				    (1278, 563)
 				    (1348, 516))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$2" @7
-				Parent_View 	@5
+			    (object RoleView "$UNNAMED$2" @8
+				Parent_View 	@6
 				location   	(126, -93)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"58051DC600A1"
-				client     	@5
-				supplier   	@4
+				client     	@6
+				supplier   	@5
 				vertices   	(list Points
 				    (1278, 563)
 				    (1209, 611))
 				line_style 	0)))
-		    (object AssociationViewNew "$UNNAMED$3" @8
+		    (object AssociationViewNew "$UNNAMED$3" @9
 			location   	(1348, 771)
 			font       	(object Font
 			    size       	10
@@ -353,31 +378,31 @@
 			line_color 	3342489
 			quidu      	"58051DD201A0"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$4" @9
-				Parent_View 	@8
+			    (object RoleView "$UNNAMED$4" @10
+				Parent_View 	@9
 				location   	(196, 115)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"58051DD40334"
-				client     	@8
+				client     	@9
 				supplier   	@2
 				vertices   	(list Points
 				    (1348, 771)
 				    (1488, 854))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$5" @10
-				Parent_View 	@8
+			    (object RoleView "$UNNAMED$5" @11
+				Parent_View 	@9
 				location   	(196, 115)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"58051DD40336"
-				client     	@8
-				supplier   	@4
+				client     	@9
+				supplier   	@5
 				vertices   	(list Points
 				    (1348, 771)
 				    (1209, 688))
 				line_style 	0)))
-		    (object AssociationViewNew "$UNNAMED$6" @11
+		    (object AssociationViewNew "$UNNAMED$6" @12
 			location   	(942, 778)
 			font       	(object Font
 			    size       	10
@@ -393,55 +418,30 @@
 			line_color 	3342489
 			quidu      	"58051DFD0343"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$7" @12
-				Parent_View 	@11
+			    (object RoleView "$UNNAMED$7" @13
+				Parent_View 	@12
 				location   	(-210, 122)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"58051E03008B"
-				client     	@11
+				client     	@12
 				supplier   	@3
 				vertices   	(list Points
 				    (942, 778)
 				    (793, 870))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$8" @13
-				Parent_View 	@11
+			    (object RoleView "$UNNAMED$8" @14
+				Parent_View 	@12
 				location   	(-210, 122)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"58051E03008D"
-				client     	@11
-				supplier   	@4
+				client     	@12
+				supplier   	@5
 				vertices   	(list Points
 				    (942, 778)
 				    (1092, 687))
 				line_style 	0)))
-		    (object UseCaseView "Use Case View::View system state" @14
-			location   	(704, 352)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@14
-			    location   	(704, 490)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"View system state")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"58051C610343"
-			height     	118)
 		    (object AssociationViewNew "$UNNAMED$12" @15
 			location   	(985, 541)
 			font       	(object Font
@@ -465,7 +465,7 @@
 				line_color 	3342489
 				quidu      	"58051E3A00E2"
 				client     	@15
-				supplier   	@14
+				supplier   	@4
 				vertices   	(list Points
 				    (985, 541)
 				    (879, 468))
@@ -477,7 +477,7 @@
 				line_color 	3342489
 				quidu      	"58051E3A00E4"
 				client     	@15
-				supplier   	@4
+				supplier   	@5
 				vertices   	(list Points
 				    (985, 541)
 				    (1092, 615))
@@ -523,13 +523,13 @@
 					ordinal    	0
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Generating web page with system state"
-					quid       	"5805375B03E4"
+				    (object Message "Generating web page with the system state"
+					quid       	"5805CB7803B6"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"ToClientFromSupplier"
-					sequence   	"1.1.1.1"
-					ordinal    	3
+					sequence   	"1.1.1.1.1.1"
+					ordinal    	5
 					quidu      	"000000000000"
 					creation   	FALSE))))
 			persistence 	"Transient"
@@ -541,10 +541,14 @@
 			    (object Link
 				quid       	"580536F20220"
 				supplier   	"System"
-				quidu      	"580536970397"
+				quidu      	"580536970397")
+			    (object Link
+				quid       	"5805CAE300F4"
+				supplier   	"Door sensor"
+				quidu      	"5805CA1701FA"
 				messages   	(list Messages
-				    (object Message "Door state check"
-					quid       	"580536F20221"
+				    (object Message "Check door state"
+					quid       	"5805CAE300F5"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
@@ -552,30 +556,63 @@
 					ordinal    	1
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Load state check"
-					quid       	"5805372202C7"
+				    (object Message "Door state"
+					quid       	"5805CB020218"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
-					dir        	"FromClientToSupplier"
+					dir        	"ToClientFromSupplier"
 					sequence   	"1.1.1"
 					ordinal    	2
 					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"5805CB1102FC"
+				supplier   	"Current sensor"
+				quidu      	"5805CA24018D"
+				messages   	(list Messages
+				    (object Message "Check load state"
+					quid       	"5805CB2D029A"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"1.1.1.1"
+					ordinal    	3
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Load state"
+					quid       	"5805CB69015A"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"1.1.1.1.1"
+					ordinal    	4
+					quidu      	"000000000000"
 					creation   	FALSE))))
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Door sensor"
+			quid       	"5805CA1701FA"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Current sensor"
+			quid       	"5805CA24018D"
 			persistence 	"Transient"
 			creationObj 	FALSE
 			multi      	FALSE)))
 	    (object Mechanism @19
 		logical_models 	(list unit_reference_list
 		    (object Object "User"
-			quid       	"5805380803E3"
+			quid       	"5805D2D201E4"
 			collaborators 	(list link_list
 			    (object Link
-				quid       	"5805380803E4"
+				quid       	"5805D2D201E5"
 				supplier   	"System"
-				quidu      	"5805380803EB"
+				quidu      	"5805D2D201ED"
 				messages   	(list Messages
 				    (object Message "Open the system web page"
-					quid       	"5805380803E5"
+					quid       	"5805D2D201E6"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
@@ -583,46 +620,46 @@
 					ordinal    	0
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Generating web page with system state"
-					quid       	"5805380803E6"
+				    (object Message "Generating web page with the system state"
+					quid       	"5805D2D201E8"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"ToClientFromSupplier"
-					sequence   	"1.1.1.1"
-					ordinal    	3
+					sequence   	"1.1.1.1.1.1"
+					ordinal    	5
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Push \"Switch\" button in browser"
-					quid       	"5805381A00B4"
+				    (object Message "Push \"Switch button in browser"
+					quid       	"5805D32E0279"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"2"
-					ordinal    	4
+					sequence   	"1.1.1.1.1.1.1"
+					ordinal    	6
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Generating web page with system state"
-					quid       	"58053894026C"
+				    (object Message "Generating web page with the system state"
+					quid       	"5805D4420032"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"ToClientFromSupplier"
-					sequence   	"2.1.1"
-					ordinal    	6
+					sequence   	"1.1.1.1.1.1.1.2.1.1"
+					ordinal    	10
 					quidu      	"000000000000"
 					creation   	FALSE))))
 			persistence 	"Transient"
 			creationObj 	FALSE
 			multi      	FALSE)
 		    (object Object "System"
-			quid       	"5805380803EB"
+			quid       	"5805D2D201ED"
 			collaborators 	(list link_list
 			    (object Link
-				quid       	"5805380803EA"
-				supplier   	"System"
-				quidu      	"5805380803EB"
+				quid       	"5805D2D201EC"
+				supplier   	"Door sensor"
+				quidu      	"5805D2D201FB"
 				messages   	(list Messages
-				    (object Message "Door state check"
-					quid       	"5805380803E9"
+				    (object Message "Check door state"
+					quid       	"5805D2D201EB"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
@@ -630,39 +667,100 @@
 					ordinal    	1
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Load state check"
-					quid       	"5805380803EC"
+				    (object Message "Door state"
+					quid       	"5805D2D201F2"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
-					dir        	"FromClientToSupplier"
+					dir        	"ToClientFromSupplier"
 					sequence   	"1.1.1"
 					ordinal    	2
 					quidu      	"000000000000"
-					creation   	FALSE)
-				    (object Message "Enabling the load"
-					quid       	"580538570037"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"5805D2D201EF"
+				supplier   	"Current sensor"
+				quidu      	"5805D2D201F9"
+				messages   	(list Messages
+				    (object Message "Check the load state"
+					quid       	"5805D2D201F0"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"2.1"
-					ordinal    	5
+					sequence   	"1.1.1.1"
+					ordinal    	3
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Load state"
+					quid       	"5805D2D201F1"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"1.1.1.1.1"
+					ordinal    	4
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Check the load state"
+					quid       	"5805D3FA00CA"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"1.1.1.1.1.1.1.2"
+					ordinal    	8
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Load state"
+					quid       	"5805D41E0258"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"1.1.1.1.1.1.1.2.1"
+					ordinal    	9
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"5805D3590082"
+				supplier   	"Relay"
+				quidu      	"5805D30603A6"
+				messages   	(list Messages
+				    (object Message "Enable the load"
+					quid       	"5805D3590083"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"1.1.1.1.1.1.1.1"
+					ordinal    	7
 					quidu      	"000000000000"
 					creation   	FALSE))))
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Door sensor"
+			quid       	"5805D2D201FB"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Current sensor"
+			quid       	"5805D2D201F9"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Relay"
+			quid       	"5805D30603A6"
 			persistence 	"Transient"
 			creationObj 	FALSE
 			multi      	FALSE)))
 	    (object Mechanism @20
 		logical_models 	(list unit_reference_list
 		    (object Object "User"
-			quid       	"580538E700D9"
+			quid       	"5805D4850164"
 			collaborators 	(list link_list
 			    (object Link
-				quid       	"580538E700DA"
+				quid       	"5805D4850165"
 				supplier   	"System"
-				quidu      	"580538E700E3"
+				quidu      	"5805D485016F"
 				messages   	(list Messages
 				    (object Message "Open the system web page"
-					quid       	"580538E700DB"
+					quid       	"5805D4850166"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
@@ -670,46 +768,46 @@
 					ordinal    	0
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Generating web page with system state"
-					quid       	"580538E700DC"
+				    (object Message "Generating web page with the system state"
+					quid       	"5805D4850168"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"ToClientFromSupplier"
-					sequence   	"1.1.1.1"
-					ordinal    	3
+					sequence   	"1.1.1.1.1.1"
+					ordinal    	5
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Push \"Switch\" button in browser"
-					quid       	"580538E700DD"
+				    (object Message "Push \"Switch button in browser"
+					quid       	"5805D4850169"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"2"
-					ordinal    	4
+					sequence   	"1.1.1.1.1.1.1"
+					ordinal    	6
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Generating web page with system state"
-					quid       	"580538E700DE"
+				    (object Message "Generating web page with the system state"
+					quid       	"5805D485016A"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"ToClientFromSupplier"
-					sequence   	"2.1.1"
-					ordinal    	6
+					sequence   	"1.1.1.1.1.1.1.2.1.1"
+					ordinal    	10
 					quidu      	"000000000000"
 					creation   	FALSE))))
 			persistence 	"Transient"
 			creationObj 	FALSE
 			multi      	FALSE)
 		    (object Object "System"
-			quid       	"580538E700E3"
+			quid       	"5805D485016F"
 			collaborators 	(list link_list
 			    (object Link
-				quid       	"580538E700E2"
-				supplier   	"System"
-				quidu      	"580538E700E3"
+				quid       	"5805D485016E"
+				supplier   	"Door sensor"
+				quidu      	"5805D4850187"
 				messages   	(list Messages
-				    (object Message "Door state check"
-					quid       	"580538E700E1"
+				    (object Message "Check door state"
+					quid       	"5805D485016D"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
@@ -717,24 +815,85 @@
 					ordinal    	1
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Load state check"
-					quid       	"580538E700E4"
+				    (object Message "Door state"
+					quid       	"5805D4850177"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
-					dir        	"FromClientToSupplier"
+					dir        	"ToClientFromSupplier"
 					sequence   	"1.1.1"
 					ordinal    	2
 					quidu      	"000000000000"
-					creation   	FALSE)
-				    (object Message "Disabling the load"
-					quid       	"580538E700E5"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"5805D4850170"
+				supplier   	"Current sensor"
+				quidu      	"5805D4850185"
+				messages   	(list Messages
+				    (object Message "Check the load state"
+					quid       	"5805D4850171"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"2.1"
-					ordinal    	5
+					sequence   	"1.1.1.1"
+					ordinal    	3
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Load state"
+					quid       	"5805D4850172"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"1.1.1.1.1"
+					ordinal    	4
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Check the load state"
+					quid       	"5805D4850173"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"1.1.1.1.1.1.1.2"
+					ordinal    	8
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Load state"
+					quid       	"5805D4850174"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"1.1.1.1.1.1.1.2.1"
+					ordinal    	9
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"5805D4850175"
+				supplier   	"Relay"
+				quidu      	"5805D485017F"
+				messages   	(list Messages
+				    (object Message "Disable the load"
+					quid       	"5805D4850176"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"1.1.1.1.1.1.1.1"
+					ordinal    	7
 					quidu      	"000000000000"
 					creation   	FALSE))))
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Door sensor"
+			quid       	"5805D4850187"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Current sensor"
+			quid       	"5805D4850185"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Relay"
+			quid       	"5805D485017F"
 			persistence 	"Transient"
 			creationObj 	FALSE
 			multi      	FALSE)))
@@ -766,10 +925,14 @@
 			    (object Link
 				quid       	"58053A850007"
 				supplier   	"System"
-				quidu      	"58053A410067"
+				quidu      	"58053A410067")
+			    (object Link
+				quid       	"5805D4B2025C"
+				supplier   	"Relay"
+				quidu      	"5805D4A20149"
 				messages   	(list Messages
-				    (object Message "Enabling the load"
-					quid       	"58053A850008"
+				    (object Message "Enable the load"
+					quid       	"5805D4B2025D"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
@@ -777,6 +940,11 @@
 					ordinal    	1
 					quidu      	"000000000000"
 					creation   	FALSE))))
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Relay"
+			quid       	"5805D4A20149"
 			persistence 	"Transient"
 			creationObj 	FALSE
 			multi      	FALSE))))
@@ -932,7 +1100,15 @@
 		    client     	"Logical View::State/Activity Model::Push the button on the controller"
 		    client_quidu 	"580533500241"
 		    sendEvent  	(object sendEvent
-			quid       	"58053393006F")))
+			quid       	"58053393006F"))
+		(object State_Transition
+		    quid       	"5805C9E4021D"
+		    supplier   	"Logical View::State/Activity Model::Open browser"
+		    supplier_quidu 	"58052EB20290"
+		    client     	"Logical View::State/Activity Model::Connect to local network"
+		    client_quidu 	"58052E3B0131"
+		    sendEvent  	(object sendEvent
+			quid       	"5805C9E40220")))
 	    objectflows 	(list objectflow_list)
 	    statediagrams 	(list StateDiagrams
 		(object ActivityDiagram "View system state"
@@ -1024,59 +1200,9 @@
 				(897, 235))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object DecisionView "Connection is seccessful?" @27
+			(object ActivityStateView "Open browser" @27
 			    Parent_View 	@22
-			    location   	(898, 480)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				charSet    	204
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object SegLabel @28
-				Parent_View 	@27
-				location   	(954, 431)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    charSet    	204
-				    bold       	FALSE
-				    italics    	TRUE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				anchor     	1
-				nlines     	2
-				max_width  	300
-				justify    	1
-				label      	"Connection is seccessful?"
-				pctDist    	1.000000
-				height     	0
-				orientation 	0)
-			    icon_style 	"Icon"
-			    line_color 	3342489
-			    fill_color 	13434879
-			    quidu      	"58052E720301"
-			    autoResize 	TRUE)
-			(object TransView "" @29
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"58052E8C00DC"
-			    client     	@25
-			    supplier   	@27
-			    vertices   	(list Points
-				(898, 341)
-				(898, 443))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object ActivityStateView "Open browser" @30
-			    Parent_View 	@22
-			    location   	(899, 688)
+			    location   	(899, 475)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1088,8 +1214,8 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@30
-				location   	(899, 691)
+				Parent_View 	@27
+				location   	(899, 478)
 				fill_color 	13434879
 				anchor_loc 	1
 				nlines     	2
@@ -1103,9 +1229,9 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object ActivityStateView "Enter the IP of controller" @31
+			(object ActivityStateView "Enter the IP of controller" @28
 			    Parent_View 	@22
-			    location   	(902, 864)
+			    location   	(902, 651)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1117,8 +1243,8 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@31
-				location   	(902, 867)
+				Parent_View 	@28
+				location   	(902, 654)
 				fill_color 	13434879
 				anchor_loc 	1
 				nlines     	2
@@ -1132,20 +1258,20 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object TransView "" @32
+			(object TransView "" @29
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"58052F3801B4"
-			    client     	@30
-			    supplier   	@31
+			    client     	@27
+			    supplier   	@28
 			    vertices   	(list Points
-				(899, 741)
-				(901, 811))
+				(899, 528)
+				(901, 598))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object StateView "Normal" "Working state(view mode)" @33
+			(object StateView "Normal" "Working state(view mode)" @30
 			    Parent_View 	@22
-			    location   	(905, 1056)
+			    location   	(905, 843)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1157,8 +1283,8 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@33
-				location   	(905, 1045)
+				Parent_View 	@30
+				location   	(905, 832)
 				fill_color 	13434879
 				anchor_loc 	1
 				nlines     	2
@@ -1172,20 +1298,20 @@
 			    width      	400
 			    height     	134
 			    autoResize 	TRUE)
-			(object TransView "" @34
+			(object TransView "" @31
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"58052F4000BC"
-			    client     	@31
-			    supplier   	@33
+			    client     	@28
+			    supplier   	@30
 			    vertices   	(list Points
-				(902, 917)
-				(903, 989))
+				(902, 704)
+				(903, 776))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object ActivityStateView "Close browser" @35
+			(object ActivityStateView "Close browser" @32
 			    Parent_View 	@22
-			    location   	(903, 1216)
+			    location   	(903, 1003)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1197,8 +1323,8 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@35
-				location   	(903, 1219)
+				Parent_View 	@32
+				location   	(903, 1006)
 				fill_color 	13434879
 				anchor_loc 	1
 				nlines     	2
@@ -1212,20 +1338,20 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object TransView "" @36
+			(object TransView "" @33
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"58052F43030D"
-			    client     	@33
-			    supplier   	@35
+			    client     	@30
+			    supplier   	@32
 			    vertices   	(list Points
-				(904, 1123)
-				(903, 1163))
+				(904, 910)
+				(903, 950))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object StateView "EndState" "End" @37
+			(object StateView "EndState" "End" @34
 			    Parent_View 	@22
-			    location   	(905, 1376)
+			    location   	(905, 1163)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1236,9 +1362,9 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    label      	(object SegLabel @38
-				Parent_View 	@37
-				location   	(959, 1334)
+			    label      	(object SegLabel @35
+				Parent_View 	@34
+				location   	(959, 1121)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -1260,101 +1386,26 @@
 			    line_color 	3342489
 			    quidu      	"58052F460297"
 			    autoResize 	TRUE)
-			(object TransView "" @39
+			(object TransView "" @36
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"58052F4D02DC"
-			    client     	@35
-			    supplier   	@37
+			    client     	@32
+			    supplier   	@34
 			    vertices   	(list Points
-				(903, 1268)
-				(904, 1333))
+				(903, 1055)
+				(904, 1120))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object TransView "" @40
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				charSet    	204
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object SegLabel @41
-				Parent_View 	@40
-				location   	(943, 576)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    charSet    	204
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				anchor_loc 	1
-				nlines     	1
-				max_width  	450
-				justify    	0
-				label      	"Yes"
-				pctDist    	0.500000
-				height     	45
-				orientation 	0)
+			(object TransView "" @37
 			    stereotype 	TRUE
 			    line_color 	3342489
-			    quidu      	"58052EC3012C"
-			    client     	@27
-			    supplier   	@30
+			    quidu      	"5805C9E4021D"
+			    client     	@25
+			    supplier   	@27
 			    vertices   	(list Points
-				(898, 517)
-				(898, 635))
-			    line_style 	0
-			    x_offset   	FALSE)
-			(object TransView "" @42
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				charSet    	204
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    label      	(object SegLabel @43
-				Parent_View 	@42
-				location   	(539, 947)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    charSet    	204
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				anchor_loc 	1
-				nlines     	1
-				max_width  	450
-				justify    	0
-				label      	"No"
-				pctDist    	0.500000
-				height     	45
-				orientation 	0)
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"58052F94015D"
-			    client     	@27
-			    supplier   	@37
-			    vertices   	(list Points
-				(823, 480)
-				(494, 478)
-				(494, 1375)
-				(863, 1375))
+				(898, 341)
+				(898, 421))
 			    line_style 	0
 			    x_offset   	FALSE)))
 		(object ActivityDiagram "Enable the load via browser"
@@ -1366,11 +1417,11 @@
 		    origin_x   	0
 		    origin_y   	63
 		    items      	(list diagram_item_list
-			(object Swimlane "" @44
+			(object Swimlane "" @38
 			    line_color 	3342489
 			    width      	450)
-			(object StateView "StartState" "Start" @45
-			    Parent_View 	@44
+			(object StateView "StartState" "Start" @39
+			    Parent_View 	@38
 			    location   	(960, 176)
 			    font       	(object Font
 				size       	10
@@ -1382,8 +1433,8 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    label      	(object SegLabel @46
-				Parent_View 	@45
+			    label      	(object SegLabel @40
+				Parent_View 	@39
 				location   	(1002, 146)
 				font       	(object Font
 				    size       	10
@@ -1406,8 +1457,8 @@
 			    line_color 	3342489
 			    quidu      	"58052D9A0337"
 			    autoResize 	TRUE)
-			(object StateView "Normal" "Working state(view mode)" @47
-			    Parent_View 	@44
+			(object StateView "Normal" "Working state(view mode)" @41
+			    Parent_View 	@38
 			    location   	(957, 375)
 			    font       	(object Font
 				size       	10
@@ -1420,7 +1471,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@47
+				Parent_View 	@41
 				location   	(957, 364)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -1435,19 +1486,19 @@
 			    width      	400
 			    height     	134
 			    autoResize 	TRUE)
-			(object TransView "" @48
+			(object TransView "" @42
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5805322300E4"
-			    client     	@45
-			    supplier   	@47
+			    client     	@39
+			    supplier   	@41
 			    vertices   	(list Points
 				(959, 205)
 				(958, 308))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object ActivityStateView "Push \"Switch\" button in browser" @49
-			    Parent_View 	@44
+			(object ActivityStateView "Push \"Switch\" button in browser" @43
+			    Parent_View 	@38
 			    location   	(962, 542)
 			    font       	(object Font
 				size       	10
@@ -1460,7 +1511,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@49
+				Parent_View 	@43
 				location   	(962, 545)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -1478,19 +1529,19 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object TransView "" @50
+			(object TransView "" @44
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5805322601E4"
-			    client     	@47
-			    supplier   	@49
+			    client     	@41
+			    supplier   	@43
 			    vertices   	(list Points
 				(959, 442)
 				(960, 488))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object ActivityStateView "Close browser" @51
-			    Parent_View 	@44
+			(object ActivityStateView "Close browser" @45
+			    Parent_View 	@38
 			    location   	(963, 720)
 			    font       	(object Font
 				size       	10
@@ -1503,7 +1554,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@51
+				Parent_View 	@45
 				location   	(963, 723)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -1518,30 +1569,30 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object TransView "" @52
+			(object TransView "" @46
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5805322900F4"
-			    client     	@49
-			    supplier   	@51
+			    client     	@43
+			    supplier   	@45
 			    vertices   	(list Points
 				(962, 594)
 				(962, 667))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object StateView "EndState" "End" @53
-			    Parent_View 	@44
+			(object StateView "EndState" "End" @47
+			    Parent_View 	@38
 			    location   	(962, 869)
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    quidu      	"58052F460297"
 			    autoResize 	TRUE)
-			(object TransView "" @54
+			(object TransView "" @48
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"58052F4D02DC"
-			    client     	@51
-			    supplier   	@53
+			    client     	@45
+			    supplier   	@47
 			    vertices   	(list Points
 				(962, 773)
 				(962, 827))
@@ -1556,11 +1607,11 @@
 		    origin_x   	0
 		    origin_y   	0
 		    items      	(list diagram_item_list
-			(object Swimlane "" @55
+			(object Swimlane "" @49
 			    line_color 	3342489
 			    width      	450)
-			(object StateView "StartState" "Start" @56
-			    Parent_View 	@55
+			(object StateView "StartState" "Start" @50
+			    Parent_View 	@49
 			    location   	(960, 176)
 			    font       	(object Font
 				size       	10
@@ -1572,8 +1623,8 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    label      	(object SegLabel @57
-				Parent_View 	@56
+			    label      	(object SegLabel @51
+				Parent_View 	@50
 				location   	(1002, 146)
 				font       	(object Font
 				    size       	10
@@ -1596,8 +1647,8 @@
 			    line_color 	3342489
 			    quidu      	"58052D9A0337"
 			    autoResize 	TRUE)
-			(object StateView "Normal" "Working state(view mode)" @58
-			    Parent_View 	@55
+			(object StateView "Normal" "Working state(view mode)" @52
+			    Parent_View 	@49
 			    location   	(957, 375)
 			    font       	(object Font
 				size       	10
@@ -1610,7 +1661,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@58
+				Parent_View 	@52
 				location   	(957, 364)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -1625,8 +1676,8 @@
 			    width      	400
 			    height     	134
 			    autoResize 	TRUE)
-			(object ActivityStateView "Push \"Switch\" button in browser" @59
-			    Parent_View 	@55
+			(object ActivityStateView "Push \"Switch\" button in browser" @53
+			    Parent_View 	@49
 			    location   	(962, 542)
 			    font       	(object Font
 				size       	10
@@ -1639,7 +1690,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@59
+				Parent_View 	@53
 				location   	(962, 545)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -1657,8 +1708,8 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object ActivityStateView "Close browser" @60
-			    Parent_View 	@55
+			(object ActivityStateView "Close browser" @54
+			    Parent_View 	@49
 			    location   	(963, 720)
 			    font       	(object Font
 				size       	10
@@ -1671,7 +1722,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@60
+				Parent_View 	@54
 				location   	(963, 723)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -1686,52 +1737,52 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object StateView "EndState" "End" @61
-			    Parent_View 	@55
+			(object StateView "EndState" "End" @55
+			    Parent_View 	@49
 			    location   	(962, 869)
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    quidu      	"58052F460297"
 			    autoResize 	TRUE)
-			(object TransView "" @62
+			(object TransView "" @56
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5805322300E4"
-			    client     	@56
-			    supplier   	@58
+			    client     	@50
+			    supplier   	@52
 			    vertices   	(list Points
 				(959, 205)
 				(958, 308))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object TransView "" @63
+			(object TransView "" @57
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5805322601E4"
-			    client     	@58
-			    supplier   	@59
+			    client     	@52
+			    supplier   	@53
 			    vertices   	(list Points
 				(959, 442)
 				(960, 488))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object TransView "" @64
+			(object TransView "" @58
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5805322900F4"
-			    client     	@59
-			    supplier   	@60
+			    client     	@53
+			    supplier   	@54
 			    vertices   	(list Points
 				(962, 594)
 				(962, 667))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object TransView "" @65
+			(object TransView "" @59
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"58052F4D02DC"
-			    client     	@60
-			    supplier   	@61
+			    client     	@54
+			    supplier   	@55
 			    vertices   	(list Points
 				(962, 773)
 				(962, 827))
@@ -1746,18 +1797,18 @@
 		    origin_x   	0
 		    origin_y   	0
 		    items      	(list diagram_item_list
-			(object Swimlane "" @66
+			(object Swimlane "" @60
 			    line_color 	3342489
 			    width      	450)
-			(object StateView "StartState" "Start" @67
-			    Parent_View 	@66
+			(object StateView "StartState" "Start" @61
+			    Parent_View 	@60
 			    location   	(928, 192)
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    quidu      	"58052D9A0337"
 			    autoResize 	TRUE)
-			(object ActivityStateView "Push the button on the controller" @68
-			    Parent_View 	@66
+			(object ActivityStateView "Push the button on the controller" @62
+			    Parent_View 	@60
 			    location   	(926, 513)
 			    font       	(object Font
 				size       	10
@@ -1770,7 +1821,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@68
+				Parent_View 	@62
 				location   	(926, 513)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -1786,15 +1837,15 @@
 			    height     	113
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object StateView "EndState" "End" @69
-			    Parent_View 	@66
+			(object StateView "EndState" "End" @63
+			    Parent_View 	@60
 			    location   	(926, 672)
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    quidu      	"58052F460297"
 			    autoResize 	TRUE)
-			(object ActivityStateView "Go to the system conroller" @70
-			    Parent_View 	@66
+			(object ActivityStateView "Go to the system conroller" @64
+			    Parent_View 	@60
 			    location   	(930, 352)
 			    font       	(object Font
 				size       	10
@@ -1807,7 +1858,7 @@
 				color      	0
 				default_color 	TRUE)
 			    label      	(object ItemLabel
-				Parent_View 	@70
+				Parent_View 	@64
 				location   	(930, 355)
 				fill_color 	13434879
 				anchor_loc 	1
@@ -1823,34 +1874,34 @@
 			    height     	106
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object TransView "" @71
+			(object TransView "" @65
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"580533700114"
-			    client     	@67
-			    supplier   	@70
+			    client     	@61
+			    supplier   	@64
 			    vertices   	(list Points
 				(928, 222)
 				(929, 299))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object TransView "" @72
+			(object TransView "" @66
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5805338F03AC"
-			    client     	@70
-			    supplier   	@68
+			    client     	@64
+			    supplier   	@62
 			    vertices   	(list Points
 				(928, 405)
 				(927, 457))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object TransView "" @73
+			(object TransView "" @67
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"58053393006C"
-			    client     	@68
-			    supplier   	@69
+			    client     	@62
+			    supplier   	@63
 			    vertices   	(list Points
 				(926, 570)
 				(926, 630))
@@ -1866,7 +1917,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object CategoryView "Logical View::java" @74
+		    (object CategoryView "Logical View::java" @68
 			location   	(208, 272)
 			font       	(object Font
 			    size       	10
@@ -1879,7 +1930,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@74
+			    Parent_View 	@68
 			    location   	(64, 188)
 			    nlines     	2
 			    max_width  	288
@@ -1891,7 +1942,7 @@
 			quidu      	"39C92661003B"
 			width      	300
 			height     	180)
-		    (object CategoryView "Logical View::javax" @75
+		    (object CategoryView "Logical View::javax" @69
 			location   	(656, 272)
 			font       	(object Font
 			    size       	10
@@ -1904,7 +1955,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@75
+			    Parent_View 	@69
 			    location   	(512, 188)
 			    nlines     	2
 			    max_width  	288
@@ -1916,7 +1967,7 @@
 			quidu      	"39C926610018"
 			width      	300
 			height     	180)
-		    (object CategoryView "Logical View::org" @76
+		    (object CategoryView "Logical View::org" @70
 			location   	(1104, 272)
 			font       	(object Font
 			    size       	10
@@ -1929,7 +1980,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@76
+			    Parent_View 	@70
 			    location   	(960, 188)
 			    nlines     	2
 			    max_width  	288
@@ -1950,7 +2001,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object NoteView @77
+		    (object NoteView @71
 			location   	(224, 624)
 			font       	(object Font
 			    size       	10
@@ -1966,7 +2017,7 @@
 			fill_color 	12632256
 			width      	300
 			height     	132)
-		    (object NoteView @78
+		    (object NoteView @72
 			location   	(704, 624)
 			font       	(object Font
 			    size       	10
@@ -1982,7 +2033,7 @@
 			fill_color 	8421631
 			width      	300
 			height     	132)
-		    (object NoteView @79
+		    (object NoteView @73
 			location   	(1200, 624)
 			font       	(object Font
 			    size       	10
@@ -1998,7 +2049,7 @@
 			fill_color 	12615680
 			width      	300
 			height     	132)
-		    (object NoteView @80
+		    (object NoteView @74
 			location   	(1664, 624)
 			font       	(object Font
 			    size       	10
@@ -2014,7 +2065,7 @@
 			fill_color 	16777215
 			width      	300
 			height     	132)
-		    (object Label @81
+		    (object Label @75
 			location   	(81, 369)
 			font       	(object Font
 			    size       	12
@@ -2030,7 +2081,7 @@
 			max_width  	1163
 			justify    	1
 			label      	"J2EE: Java 2 Platform, Enterprise Edition - v 1.2.1")
-		    (object Label @82
+		    (object Label @76
 			location   	(96, 608)
 			font       	(object Font
 			    size       	10
@@ -2046,7 +2097,7 @@
 			max_width  	268
 			justify    	1
 			label      	"Abstract Class")
-		    (object Label @83
+		    (object Label @77
 			location   	(592, 608)
 			font       	(object Font
 			    size       	10
@@ -2062,7 +2113,7 @@
 			max_width  	225
 			justify    	1
 			label      	"Final Class")
-		    (object Label @84
+		    (object Label @78
 			location   	(1104, 608)
 			font       	(object Font
 			    size       	10
@@ -2078,7 +2129,7 @@
 			max_width  	206
 			justify    	1
 			label      	"Interface")
-		    (object Label @85
+		    (object Label @79
 			location   	(1552, 608)
 			font       	(object Font
 			    size       	10
@@ -2102,10 +2153,10 @@
 		max_height 	28350
 		max_width  	21600
 		origin_x   	0
-		origin_y   	0
+		origin_y   	38
 		items      	(list diagram_item_list
-		    (object InterObjView "User" @86
-			location   	(352, 224)
+		    (object InterObjView "User" @80
+			location   	(352, 225)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2117,7 +2168,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@86
+			    Parent_View 	@80
 			    location   	(352, 224)
 			    fill_color 	13434879
 			    anchor_loc 	1
@@ -2130,26 +2181,26 @@
 			fill_color 	13434879
 			quidu      	"5805368D013F"
 			width      	300
-			height     	662
+			height     	921
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @87
+			Focus_Of_Control 	(object Focus_Of_Control "" @81
 			    location   	(352, 336)
 			    line_color 	3342489
-			    InterObjView 	@86
+			    InterObjView 	@80
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @88
-			    location   	(352, 704)
+			Focus_Of_Control 	(object Focus_Of_Control "" @82
+			    location   	(352, 960)
 			    line_color 	3342489
-			    InterObjView 	@86
+			    InterObjView 	@80
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE))
-		    (object InterObjView "System" @89
+		    (object InterObjView "System" @83
 			location   	(1152, 224)
 			font       	(object Font
 			    size       	10
@@ -2162,7 +2213,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@89
+			    Parent_View 	@83
 			    location   	(1152, 224)
 			    fill_color 	13434879
 			    anchor_loc 	1
@@ -2175,33 +2226,109 @@
 			fill_color 	13434879
 			quidu      	"580536970397"
 			width      	300
-			height     	662
+			height     	922
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @84
+			    location   	(1152, 336)
+			    line_color 	3342489
+			    InterObjView 	@83
+			    height     	274
+			    y_coord    	184
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @85
+			    location   	(1152, 544)
+			    line_color 	3342489
+			    InterObjView 	@83
+			    height     	380
+			    y_coord    	290
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @86
+			    location   	(1152, 864)
+			    line_color 	3342489
+			    InterObjView 	@83
+			    height     	192
+			    y_coord    	102
+			    Nested     	TRUE))
+		    (object InterObjView "Door sensor" @87
+			location   	(1713, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@87
+			    location   	(1713, 225)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Door sensor")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5805CA1701FA"
+			width      	300
+			height     	921
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @88
+			    location   	(1713, 448)
+			    line_color 	3342489
+			    InterObjView 	@87
+			    height     	192
+			    y_coord    	102
+			    Nested     	FALSE))
+		    (object InterObjView "Current sensor" @89
+			location   	(2198, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@89
+			    location   	(2198, 225)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Current sensor")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5805CA24018D"
+			width      	300
+			height     	921
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
 			Focus_Of_Control 	(object Focus_Of_Control "" @90
-			    location   	(1152, 336)
+			    location   	(2198, 752)
 			    line_color 	3342489
 			    InterObjView 	@89
-			    height     	195
-			    y_coord    	105
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @91
-			    location   	(1152, 464)
-			    line_color 	3342489
-			    InterObjView 	@89
-			    height     	204
-			    y_coord    	114
-			    Nested     	TRUE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @92
-			    location   	(1152, 608)
-			    line_color 	3342489
-			    InterObjView 	@89
-			    height     	188
-			    y_coord    	98
-			    Nested     	TRUE))
-		    (object InterMessView "Open the system web page" @93
+			    height     	199
+			    y_coord    	109
+			    Nested     	FALSE))
+		    (object InterMessView "Open the system web page" @91
 			location   	(16, 336)
 			font       	(object Font
 			    size       	10
@@ -2213,9 +2340,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @94
-			    Parent_View 	@93
-			    location   	(751, 292)
+			label      	(object SegLabel @92
+			    Parent_View 	@91
+			    location   	(749, 293)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2229,22 +2356,64 @@
 			    quidu      	"580536C303C5"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	512
+			    max_width  	506
 			    justify    	0
 			    label      	"Open the system web page"
+			    pctDist    	0.498049
+			    height     	44
+			    orientation 	0)
+			line_color 	3342489
+			client     	@80
+			supplier   	@83
+			Focus_Src  	@81
+			Focus_Entry 	@84
+			origin     	(367, 336)
+			terminus   	(1136, 336)
+			ordinal    	0)
+		    (object InterMessView "Check door state" @93
+			location   	(16, 445)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @94
+			    Parent_View 	@93
+			    location   	(1432, 401)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805CAE300F5"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	319
+			    justify    	0
+			    label      	"Check door state"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@86
-			supplier   	@89
-			Focus_Src  	@87
-			Focus_Entry 	@90
-			origin     	(367, 336)
-			terminus   	(1136, 336)
-			ordinal    	0)
-		    (object SelfMessView "Door state check" @95
-			location   	(16, 441)
+			client     	@83
+			supplier   	@87
+			Focus_Src  	@84
+			Focus_Entry 	@88
+			origin     	(1167, 445)
+			terminus   	(1697, 445)
+			ordinal    	1)
+		    (object InterMessView "Door state" @95
+			location   	(16, 550)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2257,7 +2426,7 @@
 			    default_color 	TRUE)
 			label      	(object SegLabel @96
 			    Parent_View 	@95
-			    location   	(1343, 410)
+			    location   	(1433, 506)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2268,25 +2437,25 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"580536F20221"
+			    quidu      	"5805CB020218"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	506
+			    max_width  	197
 			    justify    	0
-			    label      	"Door state check"
-			    pctDist    	1.173333
-			    height     	32
-			    orientation 	0)
+			    label      	"Door state"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
 			line_color 	3342489
-			client     	@89
-			supplier   	@89
-			Focus_Src  	@90
-			Focus_Entry 	@91
-			origin     	(1168, 441)
-			terminus   	(1318, 441)
-			ordinal    	1)
-		    (object SelfMessView "Load state check" @97
-			location   	(16, 576)
+			client     	@87
+			supplier   	@83
+			Focus_Src  	@88
+			Focus_Entry 	@85
+			origin     	(1697, 550)
+			terminus   	(1168, 550)
+			ordinal    	2)
+		    (object InterMessView "Check load state" @97
+			location   	(16, 756)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2299,7 +2468,7 @@
 			    default_color 	TRUE)
 			label      	(object SegLabel @98
 			    Parent_View 	@97
-			    location   	(1338, 533)
+			    location   	(1914, 714)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2310,25 +2479,25 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5805372202C7"
+			    quidu      	"5805CB2D029A"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	326
+			    max_width  	316
 			    justify    	0
-			    label      	"Load state check"
-			    pctDist    	1.140000
-			    height     	44
+			    label      	"Check load state"
+			    pctDist    	0.736946
+			    height     	43
 			    orientation 	0)
 			line_color 	3342489
-			client     	@89
+			client     	@83
 			supplier   	@89
-			Focus_Src  	@91
-			Focus_Entry 	@92
-			origin     	(1168, 576)
-			terminus   	(1318, 576)
-			ordinal    	2)
-		    (object InterMessView "Generating web page with system state" @99
-			location   	(16, 706)
+			Focus_Src  	@85
+			Focus_Entry 	@90
+			origin     	(1167, 756)
+			terminus   	(2182, 756)
+			ordinal    	3)
+		    (object InterMessView "Load state" @99
+			location   	(16, 861)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2341,7 +2510,7 @@
 			    default_color 	TRUE)
 			label      	(object SegLabel @100
 			    Parent_View 	@99
-			    location   	(752, 662)
+			    location   	(1497, 818)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2352,23 +2521,65 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5805375B03E4"
+			    quidu      	"5805CB69015A"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	732
+			    max_width  	201
 			    justify    	0
-			    label      	"Generating web page with system state"
+			    label      	"Load state"
+			    pctDist    	0.675542
+			    height     	44
+			    orientation 	1)
+			line_color 	3342489
+			client     	@89
+			supplier   	@83
+			Focus_Src  	@90
+			Focus_Entry 	@86
+			origin     	(2182, 861)
+			terminus   	(1168, 861)
+			ordinal    	4)
+		    (object InterMessView "Generating web page with the system state" @101
+			location   	(16, 966)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @102
+			    Parent_View 	@101
+			    location   	(752, 922)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805CB7803B6"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	791
+			    justify    	0
+			    label      	"Generating web page with the system state"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	1)
 			line_color 	3342489
-			client     	@89
-			supplier   	@86
-			Focus_Src  	@92
-			Focus_Entry 	@88
-			origin     	(1136, 706)
-			terminus   	(368, 706)
-			ordinal    	3)))
+			client     	@83
+			supplier   	@80
+			Focus_Src  	@86
+			Focus_Entry 	@82
+			origin     	(1136, 966)
+			terminus   	(368, 966)
+			ordinal    	5)))
 	    (object InteractionDiagram "Enable the load via browser"
 		mechanism_ref 	@19
 		quid       	"580537E202AF"
@@ -2377,10 +2588,10 @@
 		max_height 	28350
 		max_width  	21600
 		origin_x   	0
-		origin_y   	0
+		origin_y   	575
 		items      	(list diagram_item_list
-		    (object InterObjView "User" @101
-			location   	(352, 224)
+		    (object InterObjView "User" @103
+			location   	(192, 224)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2392,8 +2603,8 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@101
-			    location   	(352, 224)
+			    Parent_View 	@103
+			    location   	(192, 224)
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
@@ -2403,43 +2614,36 @@
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"5805380803E3"
+			quidu      	"5805D2D201E4"
 			width      	300
-			height     	1012
+			height     	1480
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @102
-			    location   	(352, 336)
-			    line_color 	3342489
-			    InterObjView 	@101
-			    height     	90
-			    y_coord    	0
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @103
-			    location   	(352, 704)
-			    line_color 	3342489
-			    InterObjView 	@101
-			    height     	90
-			    y_coord    	0
-			    Nested     	FALSE)
 			Focus_Of_Control 	(object Focus_Of_Control "" @104
-			    location   	(352, 816)
+			    location   	(192, 373)
 			    line_color 	3342489
-			    InterObjView 	@101
+			    InterObjView 	@103
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE)
 			Focus_Of_Control 	(object Focus_Of_Control "" @105
-			    location   	(352, 1056)
+			    location   	(192, 992)
 			    line_color 	3342489
-			    InterObjView 	@101
+			    InterObjView 	@103
+			    height     	195
+			    y_coord    	105
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @106
+			    location   	(192, 1520)
+			    line_color 	3342489
+			    InterObjView 	@103
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE))
-		    (object InterObjView "System" @106
-			location   	(1152, 224)
+		    (object InterObjView "System" @107
+			location   	(992, 224)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2451,8 +2655,8 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@106
-			    location   	(1152, 224)
+			    Parent_View 	@107
+			    location   	(992, 224)
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
@@ -2462,218 +2666,171 @@
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"5805380803EB"
+			quidu      	"5805D2D201ED"
 			width      	300
-			height     	1012
+			height     	1480
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @107
-			    location   	(1152, 336)
-			    line_color 	3342489
-			    InterObjView 	@106
-			    height     	195
-			    y_coord    	105
-			    Nested     	FALSE)
 			Focus_Of_Control 	(object Focus_Of_Control "" @108
-			    location   	(1152, 464)
+			    location   	(992, 368)
 			    line_color 	3342489
-			    InterObjView 	@106
-			    height     	204
-			    y_coord    	114
-			    Nested     	TRUE)
+			    InterObjView 	@107
+			    height     	270
+			    y_coord    	180
+			    Nested     	FALSE)
 			Focus_Of_Control 	(object Focus_Of_Control "" @109
-			    location   	(1152, 608)
+			    location   	(992, 576)
 			    line_color 	3342489
-			    InterObjView 	@106
-			    height     	188
-			    y_coord    	98
+			    InterObjView 	@107
+			    height     	371
+			    y_coord    	281
 			    Nested     	TRUE)
 			Focus_Of_Control 	(object Focus_Of_Control "" @110
-			    location   	(1152, 816)
+			    location   	(992, 896)
 			    line_color 	3342489
-			    InterObjView 	@106
+			    InterObjView 	@107
+			    height     	268
+			    y_coord    	178
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @111
+			    location   	(992, 1104)
+			    line_color 	3342489
+			    InterObjView 	@107
+			    height     	380
+			    y_coord    	290
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @112
+			    location   	(992, 1424)
+			    line_color 	3342489
+			    InterObjView 	@107
+			    height     	190
+			    y_coord    	100
+			    Nested     	TRUE))
+		    (object InterObjView "Door sensor" @113
+			location   	(1552, 224)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@113
+			    location   	(1552, 224)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Door sensor")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5805D2D201FB"
+			width      	300
+			height     	1480
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @114
+			    location   	(1552, 480)
+			    line_color 	3342489
+			    InterObjView 	@113
+			    height     	195
+			    y_coord    	105
+			    Nested     	FALSE))
+		    (object InterObjView "Current sensor" @115
+			location   	(2032, 224)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@115
+			    location   	(2032, 224)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Current sensor")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5805D2D201F9"
+			width      	300
+			height     	1480
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @116
+			    location   	(2032, 784)
+			    line_color 	3342489
+			    InterObjView 	@115
 			    height     	195
 			    y_coord    	105
 			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @111
-			    location   	(1152, 944)
+			Focus_Of_Control 	(object Focus_Of_Control "" @117
+			    location   	(2032, 1312)
 			    line_color 	3342489
-			    InterObjView 	@106
+			    InterObjView 	@115
 			    height     	197
 			    y_coord    	107
-			    Nested     	TRUE))
-		    (object InterMessView "Open the system web page" @112
-			location   	(16, 336)
+			    Nested     	FALSE))
+		    (object InterObjView "Relay" @118
+			location   	(2512, 224)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
 			    charSet    	204
 			    bold       	FALSE
 			    italics    	FALSE
-			    underline  	FALSE
+			    underline  	TRUE
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @113
-			    Parent_View 	@112
-			    location   	(751, 292)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				charSet    	204
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5805380803E5"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	512
-			    justify    	0
-			    label      	"Open the system web page"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	0)
-			line_color 	3342489
-			client     	@101
-			supplier   	@106
-			Focus_Src  	@102
-			Focus_Entry 	@107
-			origin     	(367, 336)
-			terminus   	(1136, 336)
-			ordinal    	0)
-		    (object SelfMessView "Door state check" @114
-			location   	(16, 441)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @115
-			    Parent_View 	@114
-			    location   	(1343, 410)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				charSet    	204
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5805380803E9"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	506
-			    justify    	0
-			    label      	"Door state check"
-			    pctDist    	1.173333
-			    height     	32
-			    orientation 	0)
-			line_color 	3342489
-			client     	@106
-			supplier   	@106
-			Focus_Src  	@107
-			Focus_Entry 	@108
-			origin     	(1168, 441)
-			terminus   	(1318, 441)
-			ordinal    	1)
-		    (object SelfMessView "Load state check" @116
-			location   	(16, 576)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @117
-			    Parent_View 	@116
-			    location   	(1338, 533)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				charSet    	204
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5805380803EC"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	326
-			    justify    	0
-			    label      	"Load state check"
-			    pctDist    	1.140000
-			    height     	44
-			    orientation 	0)
-			line_color 	3342489
-			client     	@106
-			supplier   	@106
-			Focus_Src  	@108
-			Focus_Entry 	@109
-			origin     	(1168, 576)
-			terminus   	(1318, 576)
-			ordinal    	2)
-		    (object InterMessView "Generating web page with system state" @118
-			location   	(16, 706)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @119
+			label      	(object ItemLabel
 			    Parent_View 	@118
-			    location   	(752, 662)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				charSet    	204
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5805380803E6"
+			    location   	(2512, 224)
+			    fill_color 	13434879
 			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	746
+			    nlines     	2
+			    max_width  	282
 			    justify    	0
-			    label      	"Generating web page with system state"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	1)
+			    label      	"Relay")
+			icon_style 	"Icon"
 			line_color 	3342489
-			client     	@106
-			supplier   	@101
-			Focus_Src  	@109
-			Focus_Entry 	@103
-			origin     	(1136, 706)
-			terminus   	(368, 706)
-			ordinal    	3)
-		    (object InterMessView "Push \"Switch\" button in browser" @120
-			location   	(16, 816)
+			fill_color 	13434879
+			quidu      	"5805D30603A6"
+			width      	300
+			height     	1480
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @119
+			    location   	(2512, 1216)
+			    line_color 	3342489
+			    InterObjView 	@118
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterMessView "Open the system web page" @120
+			location   	(16, 373)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2686,7 +2843,7 @@
 			    default_color 	TRUE)
 			label      	(object SegLabel @121
 			    Parent_View 	@120
-			    location   	(751, 772)
+			    location   	(589, 330)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2697,27 +2854,25 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5805381A00B4"
+			    quidu      	"5805D2D201E6"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	598
+			    max_width  	512
 			    justify    	0
-			    label      	
-|Push "Switch" button in browser
-			    
-			    pctDist    	0.500000
-			    height     	45
+			    label      	"Open the system web page"
+			    pctDist    	0.498049
+			    height     	44
 			    orientation 	0)
 			line_color 	3342489
-			client     	@101
-			supplier   	@106
+			client     	@103
+			supplier   	@107
 			Focus_Src  	@104
-			Focus_Entry 	@110
-			origin     	(367, 816)
-			terminus   	(1136, 816)
-			ordinal    	4)
-		    (object SelfMessView "Enabling the load" @122
-			location   	(16, 921)
+			Focus_Entry 	@108
+			origin     	(207, 373)
+			terminus   	(976, 373)
+			ordinal    	0)
+		    (object InterMessView "Check door state" @122
+			location   	(16, 478)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2730,7 +2885,7 @@
 			    default_color 	TRUE)
 			label      	(object SegLabel @123
 			    Parent_View 	@122
-			    location   	(1339, 877)
+			    location   	(1271, 434)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2741,25 +2896,25 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"580538570037"
+			    quidu      	"5805D2D201EB"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	323
+			    max_width  	319
 			    justify    	0
-			    label      	"Enabling the load"
-			    pctDist    	1.146667
+			    label      	"Check door state"
+			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@106
-			supplier   	@106
-			Focus_Src  	@110
-			Focus_Entry 	@111
-			origin     	(1168, 921)
-			terminus   	(1318, 921)
-			ordinal    	5)
-		    (object InterMessView "Generating web page with system state" @124
-			location   	(16, 1051)
+			client     	@107
+			supplier   	@113
+			Focus_Src  	@108
+			Focus_Entry 	@114
+			origin     	(1007, 478)
+			terminus   	(1536, 478)
+			ordinal    	1)
+		    (object InterMessView "Door state" @124
+			location   	(16, 583)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2772,7 +2927,7 @@
 			    default_color 	TRUE)
 			label      	(object SegLabel @125
 			    Parent_View 	@124
-			    location   	(752, 1007)
+			    location   	(1272, 539)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2783,23 +2938,361 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"58053894026C"
+			    quidu      	"5805D2D201F2"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	732
+			    max_width  	197
 			    justify    	0
-			    label      	"Generating web page with system state"
+			    label      	"Door state"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	1)
 			line_color 	3342489
-			client     	@106
-			supplier   	@101
-			Focus_Src  	@111
+			client     	@113
+			supplier   	@107
+			Focus_Src  	@114
+			Focus_Entry 	@109
+			origin     	(1536, 583)
+			terminus   	(1008, 583)
+			ordinal    	2)
+		    (object InterMessView "Check the load state" @126
+			location   	(16, 789)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @127
+			    Parent_View 	@126
+			    location   	(1750, 747)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805D2D201F0"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	382
+			    justify    	0
+			    label      	"Check the load state"
+			    pctDist    	0.736946
+			    height     	43
+			    orientation 	0)
+			line_color 	3342489
+			client     	@107
+			supplier   	@115
+			Focus_Src  	@109
+			Focus_Entry 	@116
+			origin     	(1007, 789)
+			terminus   	(2016, 789)
+			ordinal    	3)
+		    (object InterMessView "Load state" @128
+			location   	(16, 894)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @129
+			    Parent_View 	@128
+			    location   	(1336, 851)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805D2D201F1"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	201
+			    justify    	0
+			    label      	"Load state"
+			    pctDist    	0.675542
+			    height     	44
+			    orientation 	1)
+			line_color 	3342489
+			client     	@115
+			supplier   	@107
+			Focus_Src  	@116
+			Focus_Entry 	@110
+			origin     	(2016, 894)
+			terminus   	(1008, 894)
+			ordinal    	4)
+		    (object InterMessView "Generating web page with the system state" @130
+			location   	(16, 999)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @131
+			    Parent_View 	@130
+			    location   	(592, 955)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805D2D201E8"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	791
+			    justify    	0
+			    label      	"Generating web page with the system state"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@107
+			supplier   	@103
+			Focus_Src  	@110
 			Focus_Entry 	@105
-			origin     	(1136, 1051)
-			terminus   	(368, 1051)
-			ordinal    	6)))
+			origin     	(976, 999)
+			terminus   	(208, 999)
+			ordinal    	5)
+		    (object InterMessView "Push \"Switch button in browser" @132
+			location   	(16, 1104)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @133
+			    Parent_View 	@132
+			    location   	(591, 1060)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805D32E0279"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	582
+			    justify    	0
+			    label      	
+|Push "Switch button in browser
+			    
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@103
+			supplier   	@107
+			Focus_Src  	@105
+			Focus_Entry 	@111
+			origin     	(207, 1104)
+			terminus   	(976, 1104)
+			ordinal    	6)
+		    (object InterMessView "Enable the load" @134
+			location   	(16, 1209)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @135
+			    Parent_View 	@134
+			    location   	(1751, 1165)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805D3590083"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	296
+			    justify    	0
+			    label      	"Enable the load"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@107
+			supplier   	@118
+			Focus_Src  	@111
+			Focus_Entry 	@119
+			origin     	(1007, 1209)
+			terminus   	(2496, 1209)
+			ordinal    	7)
+		    (object InterMessView "Check the load state" @136
+			location   	(16, 1314)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @137
+			    Parent_View 	@136
+			    location   	(1511, 1270)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805D3FA00CA"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	382
+			    justify    	0
+			    label      	"Check the load state"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@107
+			supplier   	@115
+			Focus_Src  	@111
+			Focus_Entry 	@117
+			origin     	(1007, 1314)
+			terminus   	(2016, 1314)
+			ordinal    	8)
+		    (object InterMessView "Load state" @138
+			location   	(16, 1419)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @139
+			    Parent_View 	@138
+			    location   	(1512, 1375)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805D41E0258"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	201
+			    justify    	0
+			    label      	"Load state"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@115
+			supplier   	@107
+			Focus_Src  	@117
+			Focus_Entry 	@112
+			origin     	(2016, 1419)
+			terminus   	(1008, 1419)
+			ordinal    	9)
+		    (object InterMessView "Generating web page with the system state" @140
+			location   	(16, 1524)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @141
+			    Parent_View 	@140
+			    location   	(592, 1480)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805D4420032"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	791
+			    justify    	0
+			    label      	"Generating web page with the system state"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@107
+			supplier   	@103
+			Focus_Src  	@112
+			Focus_Entry 	@106
+			origin     	(976, 1524)
+			terminus   	(208, 1524)
+			ordinal    	10)))
 	    (object InteractionDiagram "Disable the load via browser"
 		mechanism_ref 	@20
 		quid       	"580538D60266"
@@ -2808,10 +3301,10 @@
 		max_height 	28350
 		max_width  	21600
 		origin_x   	0
-		origin_y   	31
+		origin_y   	0
 		items      	(list diagram_item_list
-		    (object InterObjView "User" @126
-			location   	(352, 224)
+		    (object InterObjView "User" @142
+			location   	(192, 224)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2823,8 +3316,8 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@126
-			    location   	(352, 224)
+			    Parent_View 	@142
+			    location   	(192, 224)
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
@@ -2834,43 +3327,36 @@
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"580538E700D9"
+			quidu      	"5805D4850164"
 			width      	300
-			height     	1012
+			height     	1480
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @127
-			    location   	(352, 336)
+			Focus_Of_Control 	(object Focus_Of_Control "" @143
+			    location   	(192, 373)
 			    line_color 	3342489
-			    InterObjView 	@126
+			    InterObjView 	@142
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @128
-			    location   	(352, 704)
+			Focus_Of_Control 	(object Focus_Of_Control "" @144
+			    location   	(192, 992)
 			    line_color 	3342489
-			    InterObjView 	@126
-			    height     	90
-			    y_coord    	0
+			    InterObjView 	@142
+			    height     	195
+			    y_coord    	105
 			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @129
-			    location   	(352, 816)
+			Focus_Of_Control 	(object Focus_Of_Control "" @145
+			    location   	(192, 1520)
 			    line_color 	3342489
-			    InterObjView 	@126
-			    height     	90
-			    y_coord    	0
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @130
-			    location   	(352, 1056)
-			    line_color 	3342489
-			    InterObjView 	@126
+			    InterObjView 	@142
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE))
-		    (object InterObjView "System" @131
-			location   	(1152, 224)
+		    (object InterObjView "System" @146
+			location   	(992, 224)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2882,8 +3368,8 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@131
-			    location   	(1152, 224)
+			    Parent_View 	@146
+			    location   	(992, 224)
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
@@ -2893,50 +3379,171 @@
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"580538E700E3"
+			quidu      	"5805D485016F"
 			width      	300
-			height     	1012
+			height     	1480
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @132
-			    location   	(1152, 336)
+			Focus_Of_Control 	(object Focus_Of_Control "" @147
+			    location   	(992, 368)
 			    line_color 	3342489
-			    InterObjView 	@131
+			    InterObjView 	@146
+			    height     	270
+			    y_coord    	180
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @148
+			    location   	(992, 576)
+			    line_color 	3342489
+			    InterObjView 	@146
+			    height     	371
+			    y_coord    	281
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @149
+			    location   	(992, 896)
+			    line_color 	3342489
+			    InterObjView 	@146
+			    height     	268
+			    y_coord    	178
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @150
+			    location   	(992, 1104)
+			    line_color 	3342489
+			    InterObjView 	@146
+			    height     	380
+			    y_coord    	290
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @151
+			    location   	(992, 1424)
+			    line_color 	3342489
+			    InterObjView 	@146
+			    height     	190
+			    y_coord    	100
+			    Nested     	TRUE))
+		    (object InterObjView "Door sensor" @152
+			location   	(1552, 224)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@152
+			    location   	(1552, 224)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Door sensor")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5805D4850187"
+			width      	300
+			height     	1480
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @153
+			    location   	(1552, 480)
+			    line_color 	3342489
+			    InterObjView 	@152
+			    height     	195
+			    y_coord    	105
+			    Nested     	FALSE))
+		    (object InterObjView "Current sensor" @154
+			location   	(2032, 224)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@154
+			    location   	(2032, 224)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Current sensor")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5805D4850185"
+			width      	300
+			height     	1480
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @155
+			    location   	(2032, 784)
+			    line_color 	3342489
+			    InterObjView 	@154
 			    height     	195
 			    y_coord    	105
 			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @133
-			    location   	(1152, 464)
+			Focus_Of_Control 	(object Focus_Of_Control "" @156
+			    location   	(2032, 1312)
 			    line_color 	3342489
-			    InterObjView 	@131
-			    height     	204
-			    y_coord    	114
-			    Nested     	TRUE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @134
-			    location   	(1152, 608)
-			    line_color 	3342489
-			    InterObjView 	@131
-			    height     	188
-			    y_coord    	98
-			    Nested     	TRUE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @135
-			    location   	(1152, 816)
-			    line_color 	3342489
-			    InterObjView 	@131
-			    height     	195
-			    y_coord    	105
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @136
-			    location   	(1152, 944)
-			    line_color 	3342489
-			    InterObjView 	@131
+			    InterObjView 	@154
 			    height     	197
 			    y_coord    	107
-			    Nested     	TRUE))
-		    (object InterMessView "Open the system web page" @137
-			location   	(16, 336)
+			    Nested     	FALSE))
+		    (object InterObjView "Relay" @157
+			location   	(2512, 224)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@157
+			    location   	(2512, 224)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Relay")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5805D485017F"
+			width      	300
+			height     	1480
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @158
+			    location   	(2512, 1216)
+			    line_color 	3342489
+			    InterObjView 	@157
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterMessView "Open the system web page" @159
+			location   	(16, 373)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2947,9 +3554,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @138
-			    Parent_View 	@137
-			    location   	(751, 292)
+			label      	(object SegLabel @160
+			    Parent_View 	@159
+			    location   	(589, 330)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2960,67 +3567,67 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"580538E700DB"
+			    quidu      	"5805D4850166"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	512
 			    justify    	0
 			    label      	"Open the system web page"
+			    pctDist    	0.498049
+			    height     	44
+			    orientation 	0)
+			line_color 	3342489
+			client     	@142
+			supplier   	@146
+			Focus_Src  	@143
+			Focus_Entry 	@147
+			origin     	(207, 373)
+			terminus   	(976, 373)
+			ordinal    	0)
+		    (object InterMessView "Check door state" @161
+			location   	(16, 478)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @162
+			    Parent_View 	@161
+			    location   	(1271, 434)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805D485016D"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	319
+			    justify    	0
+			    label      	"Check door state"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@126
-			supplier   	@131
-			Focus_Src  	@127
-			Focus_Entry 	@132
-			origin     	(367, 336)
-			terminus   	(1136, 336)
-			ordinal    	0)
-		    (object SelfMessView "Door state check" @139
-			location   	(16, 441)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @140
-			    Parent_View 	@139
-			    location   	(1343, 410)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				charSet    	204
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"580538E700E1"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	506
-			    justify    	0
-			    label      	"Door state check"
-			    pctDist    	1.173333
-			    height     	32
-			    orientation 	0)
-			line_color 	3342489
-			client     	@131
-			supplier   	@131
-			Focus_Src  	@132
-			Focus_Entry 	@133
-			origin     	(1168, 441)
-			terminus   	(1318, 441)
+			client     	@146
+			supplier   	@152
+			Focus_Src  	@147
+			Focus_Entry 	@153
+			origin     	(1007, 478)
+			terminus   	(1536, 478)
 			ordinal    	1)
-		    (object SelfMessView "Load state check" @141
-			location   	(16, 576)
+		    (object InterMessView "Door state" @163
+			location   	(16, 583)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -3031,9 +3638,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @142
-			    Parent_View 	@141
-			    location   	(1338, 533)
+			label      	(object SegLabel @164
+			    Parent_View 	@163
+			    location   	(1272, 539)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -3044,67 +3651,25 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"580538E700E4"
+			    quidu      	"5805D4850177"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	326
+			    max_width  	197
 			    justify    	0
-			    label      	"Load state check"
-			    pctDist    	1.140000
-			    height     	44
-			    orientation 	0)
-			line_color 	3342489
-			client     	@131
-			supplier   	@131
-			Focus_Src  	@133
-			Focus_Entry 	@134
-			origin     	(1168, 576)
-			terminus   	(1318, 576)
-			ordinal    	2)
-		    (object InterMessView "Generating web page with system state" @143
-			location   	(16, 706)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @144
-			    Parent_View 	@143
-			    location   	(752, 662)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				charSet    	204
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"580538E700DC"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	746
-			    justify    	0
-			    label      	"Generating web page with system state"
+			    label      	"Door state"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	1)
 			line_color 	3342489
-			client     	@131
-			supplier   	@126
-			Focus_Src  	@134
-			Focus_Entry 	@128
-			origin     	(1136, 706)
-			terminus   	(368, 706)
-			ordinal    	3)
-		    (object InterMessView "Push \"Switch\" button in browser" @145
-			location   	(16, 816)
+			client     	@152
+			supplier   	@146
+			Focus_Src  	@153
+			Focus_Entry 	@148
+			origin     	(1536, 583)
+			terminus   	(1008, 583)
+			ordinal    	2)
+		    (object InterMessView "Check the load state" @165
+			location   	(16, 789)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -3115,9 +3680,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @146
-			    Parent_View 	@145
-			    location   	(751, 772)
+			label      	(object SegLabel @166
+			    Parent_View 	@165
+			    location   	(1750, 747)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -3128,27 +3693,153 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"580538E700DD"
+			    quidu      	"5805D4850171"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	598
+			    max_width  	382
+			    justify    	0
+			    label      	"Check the load state"
+			    pctDist    	0.736946
+			    height     	43
+			    orientation 	0)
+			line_color 	3342489
+			client     	@146
+			supplier   	@154
+			Focus_Src  	@148
+			Focus_Entry 	@155
+			origin     	(1007, 789)
+			terminus   	(2016, 789)
+			ordinal    	3)
+		    (object InterMessView "Load state" @167
+			location   	(16, 894)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @168
+			    Parent_View 	@167
+			    location   	(1336, 851)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805D4850172"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	201
+			    justify    	0
+			    label      	"Load state"
+			    pctDist    	0.675542
+			    height     	44
+			    orientation 	1)
+			line_color 	3342489
+			client     	@154
+			supplier   	@146
+			Focus_Src  	@155
+			Focus_Entry 	@149
+			origin     	(2016, 894)
+			terminus   	(1008, 894)
+			ordinal    	4)
+		    (object InterMessView "Generating web page with the system state" @169
+			location   	(16, 999)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @170
+			    Parent_View 	@169
+			    location   	(592, 955)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805D4850168"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	791
+			    justify    	0
+			    label      	"Generating web page with the system state"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@146
+			supplier   	@142
+			Focus_Src  	@149
+			Focus_Entry 	@144
+			origin     	(976, 999)
+			terminus   	(208, 999)
+			ordinal    	5)
+		    (object InterMessView "Push \"Switch button in browser" @171
+			location   	(16, 1104)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @172
+			    Parent_View 	@171
+			    location   	(591, 1060)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805D4850169"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	582
 			    justify    	0
 			    label      	
-|Push "Switch" button in browser
+|Push "Switch button in browser
 			    
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@126
-			supplier   	@131
-			Focus_Src  	@129
-			Focus_Entry 	@135
-			origin     	(367, 816)
-			terminus   	(1136, 816)
-			ordinal    	4)
-		    (object SelfMessView "Disabling the load" @147
-			location   	(16, 921)
+			client     	@142
+			supplier   	@146
+			Focus_Src  	@144
+			Focus_Entry 	@150
+			origin     	(207, 1104)
+			terminus   	(976, 1104)
+			ordinal    	6)
+		    (object InterMessView "Disable the load" @173
+			location   	(16, 1209)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -3159,9 +3850,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @148
-			    Parent_View 	@147
-			    location   	(1339, 877)
+			label      	(object SegLabel @174
+			    Parent_View 	@173
+			    location   	(1751, 1165)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -3172,25 +3863,25 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"580538E700E5"
+			    quidu      	"5805D4850176"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	332
+			    max_width  	301
 			    justify    	0
-			    label      	"Disabling the load"
-			    pctDist    	1.146667
+			    label      	"Disable the load"
+			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@131
-			supplier   	@131
-			Focus_Src  	@135
-			Focus_Entry 	@136
-			origin     	(1168, 921)
-			terminus   	(1318, 921)
-			ordinal    	5)
-		    (object InterMessView "Generating web page with system state" @149
-			location   	(16, 1051)
+			client     	@146
+			supplier   	@157
+			Focus_Src  	@150
+			Focus_Entry 	@158
+			origin     	(1007, 1209)
+			terminus   	(2496, 1209)
+			ordinal    	7)
+		    (object InterMessView "Check the load state" @175
+			location   	(16, 1314)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -3201,9 +3892,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @150
-			    Parent_View 	@149
-			    location   	(752, 1007)
+			label      	(object SegLabel @176
+			    Parent_View 	@175
+			    location   	(1511, 1270)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -3214,23 +3905,107 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"580538E700DE"
+			    quidu      	"5805D4850173"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	732
+			    max_width  	382
 			    justify    	0
-			    label      	"Generating web page with system state"
+			    label      	"Check the load state"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@146
+			supplier   	@154
+			Focus_Src  	@150
+			Focus_Entry 	@156
+			origin     	(1007, 1314)
+			terminus   	(2016, 1314)
+			ordinal    	8)
+		    (object InterMessView "Load state" @177
+			location   	(16, 1419)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @178
+			    Parent_View 	@177
+			    location   	(1512, 1375)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805D4850174"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	201
+			    justify    	0
+			    label      	"Load state"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	1)
 			line_color 	3342489
-			client     	@131
-			supplier   	@126
-			Focus_Src  	@136
-			Focus_Entry 	@130
-			origin     	(1136, 1051)
-			terminus   	(368, 1051)
-			ordinal    	6)))
+			client     	@154
+			supplier   	@146
+			Focus_Src  	@156
+			Focus_Entry 	@151
+			origin     	(2016, 1419)
+			terminus   	(1008, 1419)
+			ordinal    	9)
+		    (object InterMessView "Generating web page with the system state" @179
+			location   	(16, 1524)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @180
+			    Parent_View 	@179
+			    location   	(592, 1480)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5805D485016A"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	788
+			    justify    	0
+			    label      	"Generating web page with the system state"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@146
+			supplier   	@142
+			Focus_Src  	@151
+			Focus_Entry 	@145
+			origin     	(976, 1524)
+			terminus   	(208, 1524)
+			ordinal    	10)))
 	    (object InteractionDiagram "Enable the load by the button on the device"
 		mechanism_ref 	@21
 		quid       	"58053A23038B"
@@ -3241,8 +4016,8 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object InterObjView "User" @151
-			location   	(384, 224)
+		    (object InterObjView "User" @181
+			location   	(384, 225)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -3254,7 +4029,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@151
+			    Parent_View 	@181
 			    location   	(384, 224)
 			    fill_color 	13434879
 			    anchor_loc 	1
@@ -3267,20 +4042,20 @@
 			fill_color 	13434879
 			quidu      	"58053A3B03DF"
 			width      	300
-			height     	452
+			height     	435
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @152
+			Focus_Of_Control 	(object Focus_Of_Control "" @182
 			    location   	(384, 368)
 			    line_color 	3342489
-			    InterObjView 	@151
+			    InterObjView 	@181
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE))
-		    (object InterObjView "System" @153
-			location   	(1200, 224)
+		    (object InterObjView "System" @183
+			location   	(1200, 225)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -3292,7 +4067,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@153
+			    Parent_View 	@183
 			    location   	(1200, 224)
 			    fill_color 	13434879
 			    anchor_loc 	1
@@ -3305,26 +4080,57 @@
 			fill_color 	13434879
 			quidu      	"58053A410067"
 			width      	300
-			height     	452
+			height     	435
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @154
+			Focus_Of_Control 	(object Focus_Of_Control "" @184
 			    location   	(1200, 368)
 			    line_color 	3342489
-			    InterObjView 	@153
+			    InterObjView 	@183
 			    height     	195
 			    y_coord    	105
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @155
-			    location   	(1200, 496)
+			    Nested     	FALSE))
+		    (object InterObjView "Relay" @185
+			location   	(1824, 224)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@185
+			    location   	(1824, 224)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Relay")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5805D4A20149"
+			width      	300
+			height     	436
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @186
+			    location   	(1824, 480)
 			    line_color 	3342489
-			    InterObjView 	@153
+			    InterObjView 	@185
 			    height     	90
 			    y_coord    	0
-			    Nested     	TRUE))
-		    (object InterMessView "Push button on the controller" @156
+			    Nested     	FALSE))
+		    (object InterMessView "Push button on the controller" @187
 			location   	(16, 368)
 			font       	(object Font
 			    size       	10
@@ -3336,8 +4142,8 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @157
-			    Parent_View 	@156
+			label      	(object SegLabel @188
+			    Parent_View 	@187
 			    location   	(789, 340)
 			    font       	(object Font
 				size       	10
@@ -3359,14 +4165,14 @@
 			    height     	29
 			    orientation 	0)
 			line_color 	3342489
-			client     	@151
-			supplier   	@153
-			Focus_Src  	@152
-			Focus_Entry 	@154
+			client     	@181
+			supplier   	@183
+			Focus_Src  	@182
+			Focus_Entry 	@184
 			origin     	(399, 368)
 			terminus   	(1184, 368)
 			ordinal    	0)
-		    (object SelfMessView "Enabling the load" @158
+		    (object InterMessView "Enable the load" @189
 			location   	(16, 473)
 			font       	(object Font
 			    size       	10
@@ -3378,9 +4184,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @159
-			    Parent_View 	@158
-			    location   	(1400, 430)
+			label      	(object SegLabel @190
+			    Parent_View 	@189
+			    location   	(1511, 429)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -3391,22 +4197,22 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"58053A850008"
+			    quidu      	"5805D4B2025D"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	323
+			    max_width  	295
 			    justify    	0
-			    label      	"Enabling the load"
-			    pctDist    	1.226667
-			    height     	44
+			    label      	"Enable the load"
+			    pctDist    	0.500000
+			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@153
-			supplier   	@153
-			Focus_Src  	@154
-			Focus_Entry 	@155
-			origin     	(1216, 473)
-			terminus   	(1366, 473)
+			client     	@183
+			supplier   	@185
+			Focus_Src  	@184
+			Focus_Entry 	@186
+			origin     	(1215, 473)
+			terminus   	(1808, 473)
 			ordinal    	1)))))
     root_subsystem 	(object SubSystem "Component View"
 	quid       	"39C9260C00D7"
