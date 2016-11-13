@@ -13,7 +13,22 @@ IPAddress ip(192, 168, 1, 177);
 // (port 80 is default for HTTP):
 EthernetServer server(80);
 
+// constants won't change. They're used here to
+// set pin numbers:
+const int door_switch_pin = 5;     // the number of the door switch pin
+const int button_pin = 6;         // the number of the device button pin
+const int relay_pin = 7;         //the number of the relay control pin
+
 void setup() {
+  // initialize the relay control pin as an output:
+  pinMode(relay_pin, OUTPUT);
+  // relau is activated by high state
+  digitalWrite(relay_pin, LOW);
+  // initialize the pushbutton pin as an input:
+  pinMode(button_pin, INPUT);
+  // initialize the door switch  pin as an input:
+  pinMode(door_switch_pin, INPUT);  
+  
   // Open serial communications and wait for port to open:
   Serial.begin(9600);
   while (!Serial) {
@@ -52,15 +67,21 @@ void loop() {
           client.println();
           client.println("<!DOCTYPE HTML>");
           client.println("<html>");
-          // output the value of each analog input pin
-          for (int analogChannel = 0; analogChannel < 6; analogChannel++) {
-            int sensorReading = analogRead(analogChannel);
-            client.print("analog input ");
-            client.print(analogChannel);
-            client.print(" is ");
-            client.print(sensorReading);
-            client.println("<br />");
+          client.print("Door is ");
+          // check if the door switch is pressed (LOW signal).
+          if(digitalRead(door_switch_pin)== LOW){
+            client.println("closed");
+          }else{
+            client.println("open");
           }
+          client.println("<br />");
+          client.print("Load is switched ");
+           if(analogRead(1)<=1015) {
+            client.print("ON");
+           }else{
+                client.print("OFF");
+                }
+            client.println("<br />");
           client.println("</html>");
           break;
         }
@@ -80,3 +101,4 @@ void loop() {
     Serial.println("client disconnected");
   }
 }
+
