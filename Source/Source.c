@@ -18,6 +18,8 @@ EthernetServer server(80);
 const int door_switch_pin = 5;     // the number of the door switch pin
 const int button_pin = 6;         // the number of the device button pin
 const int relay_pin = 7;         //the number of the relay control pin
+const int current_threshold = 1015; //the value of the current, when the load is switched on
+String readString = String(35); //parce the requet to server (Arduino)
 
 void setup() {
   // initialize the relay control pin as an output:
@@ -54,6 +56,9 @@ void loop() {
     while (client.connected()) {
       if (client.available()) {
         char c = client.read();
+        if (readString.length() < 35) {
+           readString += c;
+        }
         Serial.write(c);
         // if you've gotten to the end of the line (received a newline
         // character) and the line is blank, the http request has ended,
@@ -77,13 +82,22 @@ void loop() {
           client.println("<br />");
           //check the load state
           client.print("Load is switched ");
-           if(analogRead(1)<=1015) {
+           if(analogRead(1)<=current_threshold) {
             client.print("ON");
            }else{
                 client.print("OFF");
                 }
+            
+            //check the respond (which button was pushed)
+            if(readString.indexOf("/on")>0){
+              digitalWrite(relay_pin,HIGH);
+              client.println("      Load is  energized");
+            }
+            if(readString.indexOf("/off")>0){
+              digitalWrite(relay_pin,LOW);
+            }
             client.println("<br />");
-            //draw a switch button
+            //draw a switch buttons
             client.println("<a href=\"/on\"><button>ON</button></a>");
             client.println("<a href=\"/off\"><button>OFF</button></a>");
             client.println("<br />");
@@ -101,6 +115,7 @@ void loop() {
     }
     // give the web browser time to receive the data
     delay(1);
+    readString="";
     // close the connection:
     client.stop();
     Serial.println("client disconnected");

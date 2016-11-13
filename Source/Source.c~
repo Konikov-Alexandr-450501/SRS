@@ -75,12 +75,17 @@ void loop() {
             client.println("open");
           }
           client.println("<br />");
+          //check the load state
           client.print("Load is switched ");
            if(analogRead(1)<=1015) {
             client.print("ON");
            }else{
                 client.print("OFF");
                 }
+            client.println("<br />");
+            //draw a switch button
+            client.println("<a href=\"/on\"><button>ON</button></a>");
+            client.println("<a href=\"/off\"><button>OFF</button></a>");
             client.println("<br />");
           client.println("</html>");
           break;
