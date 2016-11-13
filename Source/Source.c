@@ -20,6 +20,7 @@ const int button_pin = 6;         // the number of the device button pin
 const int relay_pin = 7;         //the number of the relay control pin
 const int current_threshold = 1015; //the value of the current, when the load is switched on
 String readString = String(35); //parce the requet to server (Arduino)
+boolean relay_state = false; //realay state
 
 void setup() {
   // initialize the relay control pin as an output:
@@ -68,7 +69,7 @@ void loop() {
           client.println("HTTP/1.1 200 OK");
           client.println("Content-Type: text/html");
           client.println("Connection: close");  // the connection will be closed after completion of the response
-          client.println("Refresh: 5");  // refresh the page automatically every 5 sec
+          client.println("Refresh: 2");  // refresh the page automatically every 5 sec
           client.println();
           client.println("<!DOCTYPE HTML>");
           client.println("<html>");
@@ -92,6 +93,7 @@ void loop() {
             if(readString.indexOf("/on")>0){
               digitalWrite(relay_pin,HIGH);
               client.println("      Load is  energized");
+              
             }
             if(readString.indexOf("/off")>0){
               digitalWrite(relay_pin,LOW);
@@ -119,6 +121,20 @@ void loop() {
     // close the connection:
     client.stop();
     Serial.println("client disconnected");
-  }
+  }else{
+        //switch relay by button on the device
+        if(digitalRead(button_pin)== LOW){
+          if(!relay_state){
+             digitalWrite(relay_pin,HIGH);
+             relay_state = true;
+             Serial.println("Relay is on");
+          }else{
+             digitalWrite(relay_pin,LOW);
+             relay_state = false;
+             Serial.println("Relay is off");
+          }
+          delay(1000);
+        }
+       }
 }
 
