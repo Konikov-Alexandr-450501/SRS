@@ -1,3 +1,23 @@
+/*
+  Unmindful house
+
+ A simple web server that shows the the state of the door
+ and allows you to check and control the load state. Load
+ can be also controlled by button.
+ using an Arduino Wiznet Ethernet shield, Relay shield
+ and current sensor.
+
+ Circuit:
+ * Ethernet shield attached to pins 10, 11, 12, 13
+ * Current sensor attached to pins A0
+ * Relay shield  attached to pin 7
+ * Door switch attached to pin 5
+ * Push button atached to pin 6
+
+ created 13 Nov 2016
+ by Aleksandr Konikov
+
+*/
 #include <SPI.h>
 #include <Ethernet.h>
 
@@ -19,6 +39,7 @@ const int door_switch_pin = 5;     // the number of the door switch pin
 const int button_pin = 6;         // the number of the device button pin
 const int relay_pin = 7;         //the number of the relay control pin
 const int current_threshold = 1015; //the value of the current, when the load is switched on
+const int current_sensor_pin = 0;  //the number of the current sensor pin
 String readString = String(35); //parce the requet to server (Arduino)
 boolean relay_state = false; //realay state
 
@@ -69,7 +90,7 @@ void loop() {
           client.println("HTTP/1.1 200 OK");
           client.println("Content-Type: text/html");
           client.println("Connection: close");  // the connection will be closed after completion of the response
-          client.println("Refresh: 2");  // refresh the page automatically every 5 sec
+          client.println("Refresh: 2");  // refresh the page automatically every 2 sec
           client.println();
           client.println("<!DOCTYPE HTML>");
           client.println("<html>");
@@ -83,7 +104,9 @@ void loop() {
           client.println("<br />");
           //check the load state
           client.print("Load is switched ");
-           if(analogRead(1)<=current_threshold) {
+           Serial.print("Current sensor: ");
+           Serial.print(analogRead(current_sensor_pin));
+           if(analogRead(current_sensor_pin)<=current_threshold) {
             client.print("ON");
            }else{
                 client.print("OFF");
@@ -137,4 +160,3 @@ void loop() {
         }
        }
 }
-
